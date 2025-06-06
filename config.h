@@ -1,6 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 #define PIXELSIZE "24"
+// #define PIXELSIZE "16"
 
 /*
  * appearance
