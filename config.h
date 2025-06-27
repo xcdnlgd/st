@@ -11,7 +11,8 @@
 static char *font = "JetBrainsMonoNL Nerd Font:regular:pixelsize=" PIXELSIZE ":antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-    "Adwaita Mono:regular:pixelsize=" PIXELSIZE ":antialias=true:autohint=true"
+    "Adwaita Mono:regular:pixelsize=" PIXELSIZE ":antialias=true:autohint=true",
+    "Noto Color Emoji:regular:pixelsize=" PIXELSIZE ":antialias=true:autohint=true",
     /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
     /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
 };
@@ -374,6 +375,7 @@ static Key key[] = {
     {XK_Delete, XK_ANY_MOD, "\033[3~", +1, 0},
     {XK_BackSpace, XK_NO_MOD, "\177", 0, 0},
     {XK_BackSpace, Mod1Mask, "\033\177", 0, 0},
+	{XK_BackSpace, ShiftMask, "\033[127;2u", 0, 0},
     {XK_Home, ShiftMask, "\033[2J", 0, -1},
     {XK_Home, ShiftMask, "\033[1;2H", 0, +1},
     {XK_Home, XK_ANY_MOD, "\033[H", 0, -1},
